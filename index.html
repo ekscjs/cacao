@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Chats | Kokoo Clone</title>
     <link
       rel="stylesheet"
@@ -16,7 +17,8 @@
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">13:54</span>
-        <div class="status-bar__column"></div>
+      </div>
+      <div class="status-bar__column">
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
         <i class="fas fa-wifi"></i>
@@ -38,32 +40,43 @@
       <ul class="chats__list">
         <li class="chats__chat_chat">
           <a href="chat.html">
-            <div class="chat__column">
-              <img class="chat__avatar g-avater" src="images/man.jpg" />
-              <div class="chat__content">
-                <span class="chat__username">
-                  Song
-                </span>
-                <span class="chat__preview">Going home</span>
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <img
+                  src="images/man.jpg"
+                  alt="pic"
+                  class="g-avater friend__avatar"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    kyoung chon
+                  </span>
+                  <span class="friend__bottom-text">
+                    Going home
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">Yesterday</span>
+              <div class="friend__column">
+                <span class="chat__timestam">
+                  March 8
+                </span>
+              </div>
             </div>
           </a>
         </li>
       </ul>
     </main>
     <nav class="nav">
-      <ul class="naw__list">
+      <ul class="nav__list">
         <li class="nav__list-item">
-          <a href="friends.html" class="nav__list-link"
-            ><i class="far fa-user"></i
-          ></a>
+          <a href="friends.html" class="nav__list-link">
+            <i class="far fa-user"></i>
+          </a>
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link"
-            ><i class="fas fa-comment"></i
+            ><div class="nav__badge">8</div>
+            <i class="fas fa-comment"></i
           ></a>
         </li>
         <li class="nav__list-item">
